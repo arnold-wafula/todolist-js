@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>To-do List</title>
 </head>
 <body>
-    
+    <div>
+        <h1>To-do List</h1>
+    </div>
+    <div>
+        <div>
+            <label for="task-name">Task Name</label>
+            <input type="text" name="task_name" id="task-name">
+        </div>
+        <div>
+            <label for="start-date">Start Date</label>                
+            <input type="date" name="start_date" id="start-date">
+        </div>
+        <div>
+            <label for="end-date">End Date</label>
+            <input type="date" name="end_date" id="end-date">
+        </div>
+        <button type="submit" onclick="addTask()">Add Task</button> 
+    </div>
+    <ul id="list-container">
+
+    </ul>
+
+    <script src="script.js"></script>
 </body>
 </html>
